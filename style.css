@@ -43,7 +43,7 @@ textarea{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: gray;
   color: white;
 }
 
@@ -70,10 +70,12 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-#blocks{
+/* .blocks{
   border: #000000;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border-style:hidden;
-  border-top: 1px solid white;
+  border-top: 1px solid white; */
 
-}
+/* } */
+
+
