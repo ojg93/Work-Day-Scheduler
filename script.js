@@ -3,7 +3,6 @@
 $(document).ready(function(){
 
 const m = moment()
-console.log(m)
 document.getElementById("currentTime").textContent = m.format('MMMM Do YYYY, h:mm:ss a');;
 
 // Taking user input from input box and storing it to local storage
@@ -83,8 +82,7 @@ $("textarea").each(function(){
 
 
     var currentTime = parseInt(moment().hours());
-    
-    var rowNine = parseInt($(this).attr("name"))
+    var rowNine = parseInt($(this).attr('name'))
     if (rowNine < currentTime){
         $(this).addClass("past")
     } else if (rowNine > currentTime){
@@ -92,15 +90,7 @@ $("textarea").each(function(){
     } else {
         $(this).addClass("present")
     }
-
-    var rowTen = parseInt($(this).attr("name"))
-    if (rowTen< currentTime){
-        $(this).addClass("past")
-    } else if (rowTen > currentTime){
-        $(this).addClass("future")
-    } else {
-        $(this).addClass("present")
-    }
+  
 })   
 })
 
